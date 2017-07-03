@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <NIMSDK/NIMSDK.h>
 
 @interface AppDelegate ()
 
@@ -16,7 +17,11 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    NIMSDKOption *option = [NIMSDKOption optionWithAppKey:@"45c6af3c98409b18a84451215d0bdd6e"];
+    
+    [[NIMSDK sharedSDK] registerWithOption:option];
+    
     return YES;
 }
 

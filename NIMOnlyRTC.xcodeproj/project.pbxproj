@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		012214141F03E722005848BA /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 012214131F03E722005848BA /* NSString+MD5.m */; };
+		012214181F03F71D005848BA /* CallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 012214171F03F71D005848BA /* CallViewController.m */; };
 		0149E6F91F03729700D7FF12 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0149E6F81F03729700D7FF12 /* main.m */; };
 		0149E6FC1F03729700D7FF12 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0149E6FB1F03729700D7FF12 /* AppDelegate.m */; };
 		0149E6FF1F03729700D7FF12 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0149E6FE1F03729700D7FF12 /* ViewController.m */; };
@@ -15,6 +17,7 @@
 		0149E7071F03729700D7FF12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0149E7051F03729700D7FF12 /* LaunchScreen.storyboard */; };
 		0149E7121F03729800D7FF12 /* NIMOnlyRTCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0149E7111F03729800D7FF12 /* NIMOnlyRTCTests.m */; };
 		0149E71D1F03729800D7FF12 /* NIMOnlyRTCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0149E71C1F03729800D7FF12 /* NIMOnlyRTCUITests.m */; };
+		A48DAC4B3B0EC8683A415ECE /* libPods-NIMOnlyRTC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D7DCAA8A6E0F4368174E39D /* libPods-NIMOnlyRTC.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		012214121F03E722005848BA /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+MD5.h"; path = "Category/NSString+MD5.h"; sourceTree = "<group>"; };
+		012214131F03E722005848BA /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+MD5.m"; path = "Category/NSString+MD5.m"; sourceTree = "<group>"; };
+		012214161F03F71D005848BA /* CallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallViewController.h; sourceTree = "<group>"; };
+		012214171F03F71D005848BA /* CallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallViewController.m; sourceTree = "<group>"; };
 		0149E6F41F03729700D7FF12 /* NIMOnlyRTC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NIMOnlyRTC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0149E6F81F03729700D7FF12 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0149E6FA1F03729700D7FF12 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +58,9 @@
 		0149E7181F03729800D7FF12 /* NIMOnlyRTCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NIMOnlyRTCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0149E71C1F03729800D7FF12 /* NIMOnlyRTCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NIMOnlyRTCUITests.m; sourceTree = "<group>"; };
 		0149E71E1F03729800D7FF12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01FA5D19FAAB8D7B02A70D4E /* Pods-NIMOnlyRTC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NIMOnlyRTC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NIMOnlyRTC/Pods-NIMOnlyRTC.debug.xcconfig"; sourceTree = "<group>"; };
+		0D7DCAA8A6E0F4368174E39D /* libPods-NIMOnlyRTC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NIMOnlyRTC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2703CA8773E48CBE9C2C621E /* Pods-NIMOnlyRTC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NIMOnlyRTC.release.xcconfig"; path = "Pods/Target Support Files/Pods-NIMOnlyRTC/Pods-NIMOnlyRTC.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A48DAC4B3B0EC8683A415ECE /* libPods-NIMOnlyRTC.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +89,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		012214151F03EDAD005848BA /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				012214121F03E722005848BA /* NSString+MD5.h */,
+				012214131F03E722005848BA /* NSString+MD5.m */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
 		0149E6EB1F03729700D7FF12 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +105,8 @@
 				0149E7101F03729800D7FF12 /* NIMOnlyRTCTests */,
 				0149E71B1F03729800D7FF12 /* NIMOnlyRTCUITests */,
 				0149E6F51F03729700D7FF12 /* Products */,
+				1676AFFEA9A0E4EB5BD7257E /* Pods */,
+				0EFE5DD64902B0DBEF1D6377 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,10 +123,13 @@
 		0149E6F61F03729700D7FF12 /* NIMOnlyRTC */ = {
 			isa = PBXGroup;
 			children = (
+				012214151F03EDAD005848BA /* Category */,
 				0149E6FA1F03729700D7FF12 /* AppDelegate.h */,
 				0149E6FB1F03729700D7FF12 /* AppDelegate.m */,
 				0149E6FD1F03729700D7FF12 /* ViewController.h */,
 				0149E6FE1F03729700D7FF12 /* ViewController.m */,
+				012214161F03F71D005848BA /* CallViewController.h */,
+				012214171F03F71D005848BA /* CallViewController.m */,
 				0149E7001F03729700D7FF12 /* Main.storyboard */,
 				0149E7031F03729700D7FF12 /* Assets.xcassets */,
 				0149E7051F03729700D7FF12 /* LaunchScreen.storyboard */,
@@ -140,6 +165,23 @@
 			path = NIMOnlyRTCUITests;
 			sourceTree = "<group>";
 		};
+		0EFE5DD64902B0DBEF1D6377 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0D7DCAA8A6E0F4368174E39D /* libPods-NIMOnlyRTC.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1676AFFEA9A0E4EB5BD7257E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				01FA5D19FAAB8D7B02A70D4E /* Pods-NIMOnlyRTC.debug.xcconfig */,
+				2703CA8773E48CBE9C2C621E /* Pods-NIMOnlyRTC.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +189,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0149E7211F03729800D7FF12 /* Build configuration list for PBXNativeTarget "NIMOnlyRTC" */;
 			buildPhases = (
+				A6B21389F7A8914040796130 /* [CP] Check Pods Manifest.lock */,
 				0149E6F01F03729700D7FF12 /* Sources */,
 				0149E6F11F03729700D7FF12 /* Frameworks */,
 				0149E6F21F03729700D7FF12 /* Resources */,
+				F2ABF59473AA9E853B4875D4 /* [CP] Embed Pods Frameworks */,
+				4B93A85536580F9EB1A2A71A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -271,13 +316,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4B93A85536580F9EB1A2A71A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NIMOnlyRTC/Pods-NIMOnlyRTC-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6B21389F7A8914040796130 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F2ABF59473AA9E853B4875D4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NIMOnlyRTC/Pods-NIMOnlyRTC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0149E6F01F03729700D7FF12 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				012214181F03F71D005848BA /* CallViewController.m in Sources */,
 				0149E6FF1F03729700D7FF12 /* ViewController.m in Sources */,
 				0149E6FC1F03729700D7FF12 /* AppDelegate.m in Sources */,
+				012214141F03E722005848BA /* NSString+MD5.m in Sources */,
 				0149E6F91F03729700D7FF12 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,6 +522,7 @@
 		};
 		0149E7221F03729800D7FF12 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01FA5D19FAAB8D7B02A70D4E /* Pods-NIMOnlyRTC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = A9356BL3X4;
@@ -439,6 +535,7 @@
 		};
 		0149E7231F03729800D7FF12 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2703CA8773E48CBE9C2C621E /* Pods-NIMOnlyRTC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = A9356BL3X4;
@@ -518,6 +615,7 @@
 				0149E7231F03729800D7FF12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0149E7241F03729800D7FF12 /* Build configuration list for PBXNativeTarget "NIMOnlyRTCTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +624,7 @@
 				0149E7261F03729800D7FF12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0149E7271F03729800D7FF12 /* Build configuration list for PBXNativeTarget "NIMOnlyRTCUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +633,7 @@
 				0149E7291F03729800D7FF12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
