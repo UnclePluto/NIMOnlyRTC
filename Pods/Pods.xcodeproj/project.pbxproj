@@ -13,29 +13,15 @@
 
 /* Begin PBXFileReference section */
 		0510A7C438C865F895657DAD92D1E8BE /* Pods-NIMOnlyRTC-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NIMOnlyRTC-resources.sh"; sourceTree = "<group>"; };
-		1625901B0242731BCFC7040E52A50BFC /* NIMSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NIMSDK.framework; path = NIMSDK/NIMSDK.framework; sourceTree = "<group>"; };
-		1D27E46E4B5B3701CAB7089B23F21CC5 /* libnts.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libnts.a; path = NIMAVChat/Libs/libnts.a; sourceTree = "<group>"; };
-		24912B812D7EEF11CDFE072170D85F9B /* libnvs.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libnvs.a; path = NIMAVChat/Libs/libnvs.a; sourceTree = "<group>"; };
-		2B84F913C5C0A3129D95EC3783AFD70D /* libssl.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libssl.a; path = NIMSDK/Libs/libssl.a; sourceTree = "<group>"; };
-		2EC8046DB059679E90598D9775CEECFF /* libaacplus.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libaacplus.a; path = NIMSDK/Libs/libaacplus.a; sourceTree = "<group>"; };
-		4E341CD1D5B487F227EE7888A1330BEC /* libevent.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libevent.a; path = NIMSDK/Libs/libevent.a; sourceTree = "<group>"; };
-		52146B1D408E00F84B4CE7AD4CE5FFAA /* NMCVideoFilter.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = NMCVideoFilter.bundle; path = NIMAVChat/Resources/NMCVideoFilter.bundle; sourceTree = "<group>"; };
-		617BEB67393FA1FCCED031C5A250199D /* NIMAVChat.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NIMAVChat.framework; path = NIMAVChat/NIMAVChat.framework; sourceTree = "<group>"; };
-		6F77CC1BEFD0262DCCCE3F17D7990C9B /* libopenh264.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libopenh264.a; path = NIMAVChat/Libs/libopenh264.a; sourceTree = "<group>"; };
 		855A125221ACAD4658EB59C4576270BC /* libPods-NIMOnlyRTC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-NIMOnlyRTC.a"; path = "libPods-NIMOnlyRTC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		88E349932FDB94B20304C2B5F0226958 /* libGPUImage.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGPUImage.a; path = NIMAVChat/Libs/libGPUImage.a; sourceTree = "<group>"; };
 		915111BE2B0EE8F799DBD7B98A1DA6D8 /* Pods-NIMOnlyRTC-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NIMOnlyRTC-acknowledgements.markdown"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		B331D58E021C332D382E5F278844BE98 /* libnio.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libnio.a; path = NIMAVChat/Libs/libnio.a; sourceTree = "<group>"; };
 		C05FA1928B7A2982DC8A2B33B4572C3B /* Pods-NIMOnlyRTC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NIMOnlyRTC.debug.xcconfig"; sourceTree = "<group>"; };
 		C2A66CA784008FFE0E21E193FA33F3BB /* Pods-NIMOnlyRTC-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NIMOnlyRTC-frameworks.sh"; sourceTree = "<group>"; };
 		C50164792FBFFB86B07CBAC957A5252E /* Pods-NIMOnlyRTC-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NIMOnlyRTC-dummy.m"; sourceTree = "<group>"; };
-		C67FF6FE38909D8691D79F06278F3E31 /* libopus.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libopus.a; path = NIMAVChat/Libs/libopus.a; sourceTree = "<group>"; };
-		C8A18A2A2297B25A1904860B326F6806 /* libcrypto.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libcrypto.a; path = NIMSDK/Libs/libcrypto.a; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		CF346CDB3EC5F009E9099C4DD088E2C8 /* Pods-NIMOnlyRTC-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NIMOnlyRTC-acknowledgements.plist"; sourceTree = "<group>"; };
 		D78F275957C8169FD6A31F11F4D7BF43 /* Pods-NIMOnlyRTC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NIMOnlyRTC.release.xcconfig"; sourceTree = "<group>"; };
-		E5A03CDA20F7356201903F5D3D669866 /* libNMCVideoModule.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libNMCVideoModule.a; path = NIMAVChat/Libs/libNMCVideoModule.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,58 +36,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		02CC66B20969531DCBB86E9185019E0F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				2EC8046DB059679E90598D9775CEECFF /* libaacplus.a */,
-				C8A18A2A2297B25A1904860B326F6806 /* libcrypto.a */,
-				4E341CD1D5B487F227EE7888A1330BEC /* libevent.a */,
-				88E349932FDB94B20304C2B5F0226958 /* libGPUImage.a */,
-				B331D58E021C332D382E5F278844BE98 /* libnio.a */,
-				E5A03CDA20F7356201903F5D3D669866 /* libNMCVideoModule.a */,
-				1D27E46E4B5B3701CAB7089B23F21CC5 /* libnts.a */,
-				24912B812D7EEF11CDFE072170D85F9B /* libnvs.a */,
-				6F77CC1BEFD0262DCCCE3F17D7990C9B /* libopenh264.a */,
-				C67FF6FE38909D8691D79F06278F3E31 /* libopus.a */,
-				2B84F913C5C0A3129D95EC3783AFD70D /* libssl.a */,
-				617BEB67393FA1FCCED031C5A250199D /* NIMAVChat.framework */,
-				1625901B0242731BCFC7040E52A50BFC /* NIMSDK.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		117E150EE70A55C8FA71824921DD6B75 /* NIMSDK */ = {
-			isa = PBXGroup;
-			children = (
-				02CC66B20969531DCBB86E9185019E0F /* Frameworks */,
-				2EE8665B7F69E25E49444AD26F19DA00 /* Resources */,
-			);
-			name = NIMSDK;
-			path = NIMSDK;
-			sourceTree = "<group>";
-		};
 		16E91A628561111DFCE6295F01885D70 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
 				756D62DF357825E18CD5F51D7A0B3AB2 /* Pods-NIMOnlyRTC */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		2EE8665B7F69E25E49444AD26F19DA00 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				52146B1D408E00F84B4CE7AD4CE5FFAA /* NMCVideoFilter.bundle */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		4DEADE4CF3F9E1F1B3F8C85A984A978E /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				117E150EE70A55C8FA71824921DD6B75 /* NIMSDK */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
@@ -140,10 +80,18 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				4DEADE4CF3F9E1F1B3F8C85A984A978E /* Pods */,
+				EE5DD69E076111BF7835C2C761159D6E /* Pods */,
 				79DDE805A120549991A380F8251EDA6B /* Products */,
 				16E91A628561111DFCE6295F01885D70 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		9DD90FD1C02E4AC4C85B86B94FEFF15B /* NIMSDK */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = NIMSDK;
+			path = NIMSDK;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -152,6 +100,14 @@
 				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE5DD69E076111BF7835C2C761159D6E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9DD90FD1C02E4AC4C85B86B94FEFF15B /* NIMSDK */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

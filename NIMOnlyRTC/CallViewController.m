@@ -37,6 +37,8 @@
     
     [[NIMAVChatSDK sharedSDK].netCallManager addDelegate:self];
     
+    
+    
 }
 
 - (void)viewDidDisappear:(BOOL)animated{
@@ -54,6 +56,7 @@
     NIMNetCallVideoCaptureParam *captureParam = [[NIMNetCallVideoCaptureParam alloc]init];
     NIMNetCallOption *option = [[NIMNetCallOption alloc] init];
     option.videoCaptureParam = captureParam;
+    
     option.alwaysKeepCalling = YES;
     
     __weak typeof (& *self)wself = self;
@@ -217,6 +220,9 @@
     self.localViewPrew = displayView;
     displayView.frame = self.localView.bounds;
     [self.localView addSubview:displayView];
+    
+    
+    NSLog(@"---------------走了-----------------");
 }
 
 -(void)onRemoteYUVReady:(NSData *)yuvData width:(NSUInteger)width height:(NSUInteger)height from:(NSString *)user{
