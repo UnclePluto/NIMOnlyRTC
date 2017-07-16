@@ -2,6 +2,6 @@ platform :ios, '8.0'
 
 target 'NIMOnlyRTC' do
     
-pod 'NIMSDK','3.9.1'
+pod 'NIMSDK', '4.0.0'
 
 end
