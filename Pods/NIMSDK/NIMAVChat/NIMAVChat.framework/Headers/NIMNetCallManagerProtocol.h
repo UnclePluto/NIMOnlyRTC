@@ -42,7 +42,7 @@ typedef void(^NIMNetCallResponseHandler)(NSError * __nullable error, UInt64 call
  *  @param meeting 预订或者加入的多人会议
  *  @param error   预订或者加入多人会议请求结果, 如果成功 error 为 nil
  */
-typedef void(^NIMNetCallMeetingHandler)(NIMNetCallMeeting *meeting, NSError *error);
+typedef void(^NIMNetCallMeetingHandler)(NIMNetCallMeeting *meeting, NSError * __nullable error);
 
 /**
  *  网络通话状态
@@ -201,7 +201,7 @@ typedef NS_ENUM(NSInteger, NIMNetCallCamera){
  @param error 断开的原因，如果是 nil 表示正常退出
  */
 - (void)onCallDisconnected:(UInt64)callID
-                 withError:(NSError *)error;
+                 withError:(nullable NSError *)error;
 
 /**
  *  收到对方网络通话控制信息，用于方便通话双方沟通信息
@@ -361,6 +361,11 @@ typedef NS_ENUM(NSInteger, NIMNetCallCamera){
  当前语音文件混音任务完成回调
  */
 - (void)onAudioMixTaskCompleted;
+
+/**
+ 当前音效播放完成回调
+ */
+- (void)onSoundEffectPlayCompleted;
 
 /**
  互动直播状态回调
@@ -589,7 +594,7 @@ typedef NS_ENUM(NSInteger, NIMNetCallCamera){
 /**
  *  设置视频最大编码码率
  *
- *  @param bitrate 最大编码码率
+ *  @param bitrate 最大编码码率 (bps)
  *
  *  @return 是否设置成功
  */
@@ -624,9 +629,9 @@ typedef NS_ENUM(NSInteger, NIMNetCallCamera){
 /**
  *  发送视频 SampleBuffer
  *
- *  @param buffer 只支持包含以下三种 CVPixelBuffer 数据格式的 sampleBuffer: kCVPixelFormatType_32BGRA、kCVPixelFormatType_420YpCbCr8BiPlanarVideoRange、kCVPixelFormatType_420YpCbCr8BiPlanarFUllRange
+ *  @param buffer 只支持包含以下三种 CVPixelBuffer 数据格式的 sampleBuffer: kCVPixelFormatType_32BGRA、kCVPixelFormatType_420YpCbCr8BiPlanarVideoRange、kCVPixelFormatType_420YpCbCr8BiPlanarFullRange
  *
- *  @discussion 发送的视频数据需要是从 videoHandler 获取到的数据，并且需要填入回调时该画面对应的时间戳，否则对端的视频播放时序会被破坏
+ *  @discussion 可以发送SDK回调上来的视频数据，也可以发送自定义视频数据 自定义数据输入不能超过720P
  *
  *  @return 发送结果
  */
@@ -691,6 +696,16 @@ typedef NS_ENUM(NSInteger, NIMNetCallCamera){
  @return 混音任务. 如果没有当前任务则返回 nil
  */
 - (nullable NIMNetCallAudioFileMixTask *)currentAudioMixTask;
+
+
+/**
+ 播放音效，用于在混音时播放短暂的音效
+ 
+ @param task 音效任务。其中的 sendVolume 参数在播放音效中无效
+ 
+ @return 结果, 如果成功开始了, 返回 nil
+ */
+- (nullable NSError *)playSoundEffect:(NIMNetCallAudioFileMixTask *)task;
 
 /**
  *  获得当前视频通话的本地预览层

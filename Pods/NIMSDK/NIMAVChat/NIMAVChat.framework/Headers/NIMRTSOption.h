@@ -36,6 +36,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) BOOL voiceDetect;
 
 /**
+ *  啸叫抑制, 默认为 NO
+ */
+@property (nonatomic, assign) BOOL audioHowlingSuppress;
+
+/**
  期望发送高清语音, 只有在通话的所有的参与者都设置为高清语音时才生效。开启该选项后蓝牙耳机将不能使用
  */
 @property (nonatomic, assign) BOOL preferHDAudio;

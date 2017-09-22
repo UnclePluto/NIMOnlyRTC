@@ -26,7 +26,7 @@ typedef void(^NIMNetCallVideoSampleBufferHandler)(CMSampleBufferRef sampleBuffer
 
 /**
  *  期望的发送视频质量
- *  @discussion SDK可能会根据具体机型运算性能和协商结果调整为更合适的清晰度，导致该设置无效（该情况通常发生在通话一方有低性能机器时）
+ *  @discussion 默认是 480P 等级. SDK可能会根据具体机型运算性能和协商结果调整为更合适的清晰度, 导致该设置无效(该情况通常发生在低性能设备上)
  */
 @property (nonatomic,assign)    NIMNetCallVideoQuality   preferredVideoQuality;
 
@@ -58,7 +58,7 @@ typedef void(^NIMNetCallVideoSampleBufferHandler)(CMSampleBufferRef sampleBuffer
 @property (nonatomic, assign) NIMVideoOrientation videoCaptureOrientation;
 
 /**
- *  视频发送帧率
+ *  视频发送帧率. 默认是 15 FPS
  */
 @property (nonatomic, assign) NIMNetCallVideoFrameRate videoFrameRate;
 
@@ -74,6 +74,12 @@ typedef void(^NIMNetCallVideoSampleBufferHandler)(CMSampleBufferRef sampleBuffer
  @discussion 只在支持手动对焦时才起作用，如果设置YES则使用默认的手动对焦框，设置NO表示不使用默认的手动对焦框，可以自己自定义对焦框。
  */
 @property (nonatomic, assign) BOOL isSupportedManualFocusFrame;
+
+/**
+ *  视频前处理开关 默认是 YES 打开前处理
+ */
+@property (nonatomic, assign) BOOL provideLocalVideoProcess;
+
 
 @end
 

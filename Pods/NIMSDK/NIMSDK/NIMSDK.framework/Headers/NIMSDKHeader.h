@@ -83,7 +83,7 @@ NS_ASSUME_NONNULL_BEGIN
  *  获得SDK Log路径
  *
  *  @return SDK当天log路径
- *  @discussion 这个接口会返回当前最新的一个log文件路径,SDK会每天生成一个log文件方便开发者定位和反馈问题
+ *  @discussion 这个接口会返回当前最新的一个 log 文件路径,SDK 会每天生成一个 log 文件方便开发者定位和反馈问题
  */
 - (NSString *)currentLogFilepath;
 
@@ -157,6 +157,11 @@ NS_ASSUME_NONNULL_BEGIN
  *  智能机器人管理类
  */
 @property (nonatomic,strong,readonly)   id<NIMRobotManager> robotManager;
+
+/**
+ *  红包管理类
+ */
+@property (nonatomic,strong,readonly)   id<NIMRedPacketManager> redPacketManager;
 
 @end
 

@@ -158,7 +158,7 @@ typedef NS_ENUM(NSInteger, NIMSystemNotificationType){
 
 /**
  *  是否只发送给在线用户
- *  @discussion 默认为YES 如果这个值为NO,通知接受者如果在通知投递时不在线,那么他会在下次登录时收到这个通知。如果消息接受者是群,则只允许投递到当前在线的用户
+ *  @discussion 默认为YES 如果这个值为NO,通知接受者如果在通知投递时不在线,那么他会在下次登录时收到这个通知
  */
 @property (nonatomic,assign)                BOOL sendToOnlineUsersOnly;
 
@@ -188,6 +188,13 @@ typedef NS_ENUM(NSInteger, NIMSystemNotificationType){
 @property (nullable,nonatomic,strong)                NIMAntiSpamOption *antiSpamOption;
 
 
+/**
+ *  自定义系统通知初始化方法
+ *
+ *  @param content 自定义系统通知内容
+ *
+ *  @return 自定义系统通知实例
+ */
 - (instancetype)initWithContent:(NSString *)content;
 
 @end

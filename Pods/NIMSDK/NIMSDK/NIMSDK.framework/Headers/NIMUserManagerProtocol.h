@@ -231,7 +231,7 @@ typedef NS_ENUM(NSInteger, NIMUserInfoUpdateTag) {
  *              用户资料除自己之外，不保证其他用户资料实时更新
  *              其他用户资料更新的时机为: 1.调用 - (void)fetchUserInfos:completion: 方法刷新用户
  *                                    2.收到此用户发来消息
- *                                    3.程序再次启动，此时会同步好友信息
+ *                                    3.程序再次启动，此时会同步部分好友信息
  */
 - (nullable NIMUser *)userInfo:(NSString *)userId;
 

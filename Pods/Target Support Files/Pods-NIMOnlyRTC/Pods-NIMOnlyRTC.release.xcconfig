@@ -1,9 +1,10 @@
 FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/NIMSDK/NIMSDK" "${PODS_ROOT}/NIMSDK/NIMAVChat"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/NIMSDK"
-LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/NIMSDK/NIMAVChat/Libs" $(inherited) "${PODS_ROOT}/NIMSDK/NIMSDK/Libs"
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/NIMSDK/NIMAVChat/Libs" "${PODS_ROOT}/NIMSDK/NIMSDK/Libs"
 OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/NIMSDK"
 OTHER_LDFLAGS = $(inherited) -ObjC -l"GPUImage" -l"NMCVideoModule" -l"aacplus" -l"c++" -l"crypto" -l"event" -l"nio" -l"nts" -l"nvs" -l"openh264" -l"opus" -l"sqlite3.0" -l"ssl" -l"z" -framework "AVFoundation" -framework "AudioToolbox" -framework "CoreMedia" -framework "CoreTelephony" -framework "NIMAVChat" -framework "NIMSDK" -framework "SystemConfiguration" -framework "VideoToolbox"
 PODS_BUILD_DIR = $BUILD_DIR
 PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
 PODS_ROOT = ${SRCROOT}/Pods

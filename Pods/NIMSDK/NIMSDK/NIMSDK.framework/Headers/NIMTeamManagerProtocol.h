@@ -25,17 +25,19 @@ typedef void(^NIMTeamHandler)(NSError * __nullable error);
  *  创建群组block
  *
  *  @param error   错误,如果成功则error为nil
- *  @param teamId 群组ID
+ *  @param teamId  群组ID
+ *  @param failedUserIds 邀请失败的群成员ID
  */
-typedef void(^NIMTeamCreateHandler)(NSError * __nullable error,NSString * __nullable teamId);
+typedef void(^NIMTeamCreateHandler)(NSError * __nullable error, NSString * __nullable teamId, NSArray<NSString *> * __nullable failedUserIds);
+
 
 /**
- *  群成员block
+ *  群成员获取 block
  *
  *  @param error   错误,如果成功则error为nil
- *  @param members 群成员列表,内部为NIMTeamMember
+ *  @param members 成功的群成员列表,内部为NIMTeamMember
  */
-typedef void(^NIMTeamMemberHandler)(NSError * __nullable error,NSArray<NIMTeamMember *> * __nullable members);
+typedef void(^NIMTeamMemberHandler)(NSError * __nullable error, NSArray<NIMTeamMember *> * __nullable members);
 
 /**
  *  拉取群信息Block
@@ -43,7 +45,7 @@ typedef void(^NIMTeamMemberHandler)(NSError * __nullable error,NSArray<NIMTeamMe
  *  @param error 错误,如果成功则error为nil
  *  @param team  群信息
  */
-typedef void(^NIMTeamFetchInfoHandler)(NSError * __nullable error,NIMTeam * __nullable team);
+typedef void(^NIMTeamFetchInfoHandler)(NSError * __nullable error, NIMTeam * __nullable team);
 
 /**
  *  群申请block
@@ -51,7 +53,7 @@ typedef void(^NIMTeamFetchInfoHandler)(NSError * __nullable error,NIMTeam * __nu
  *  @param error       错误,如果成功则error为nil
  *  @param applyStatus 群申请状态
  */
-typedef void(^NIMTeamApplyHandler)(NSError * __nullable error,NIMTeamApplyStatus applyStatus);
+typedef void(^NIMTeamApplyHandler)(NSError * __nullable error, NIMTeamApplyStatus applyStatus);
 
 
 /**

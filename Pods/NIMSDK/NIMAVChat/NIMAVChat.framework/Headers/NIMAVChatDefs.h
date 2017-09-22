@@ -58,7 +58,7 @@ typedef NS_ENUM(NSInteger, NIMNetCallVideoCaptureFormat) {
  */
 typedef NS_ENUM(NSInteger, NIMNetCallVideoQuality) {
     /**
-     *  默认视频质量
+     *  默认视频质量. 一般是 480P 等级
      */
     NIMNetCallVideoQualityDefault    = 0,
     /**
@@ -74,15 +74,15 @@ typedef NS_ENUM(NSInteger, NIMNetCallVideoQuality) {
      */
     NIMNetCallVideoQualityHigh       = 3,
     /**
-     *  480P等级视频质量
+     *  480P 等级视频质量
      */
     NIMNetCallVideoQuality480pLevel  = 4,
     /**
-     *  540P等级视频质量
+     *  540P 等级视频质量
      */
     NIMNetCallVideoQuality540pLevel  = 5,
     /**
-     *  720P等级视频质量
+     *  720P 等级视频质量
      */
     NIMNetCallVideoQuality720pLevel  = 6,
     
@@ -160,7 +160,7 @@ typedef NS_ENUM(NSUInteger, NIMNetCallVideoFrameRate) {
      */
     NIMNetCallVideoFrameRate25FPS,
     /**
-     *  缺省帧率
+     *  缺省帧率. 15 FPS
      */
     NIMNetCallVideoFrameRateDefault,
     /**
@@ -196,6 +196,11 @@ typedef NS_ENUM(NSUInteger, NIMAVChatScene) {
      *  高清音乐场景. 只在 preferHDAudio 开启时生效. 生效后 audioDenoise 和 voiceDetect 的设置无效 (自动关闭)
      */
     NIMAVChatSceneHighQualityMusic,
+    
+    /**
+     *  自适应高清音乐场景. 只在 preferHDAudio 开启时生效. 生效后 audioDenoise 和 voiceDetect 的设置无效 (自动关闭). 该场景在多人会议中无其他端或者其他端都是观众时适时自动适配高清音乐，当其他端有发言者时自动适配 VoIP 通话
+     */
+    NIMAVChatSceneHighQualityMusicAdaptive,
 };
 
 

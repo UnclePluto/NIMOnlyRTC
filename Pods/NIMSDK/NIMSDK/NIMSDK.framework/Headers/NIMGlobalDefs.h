@@ -150,6 +150,12 @@ typedef NS_ENUM(NSInteger, NIMLocalErrorCode) {
      */
     
     NIMLocalErrorCodeAutoLoginRetryLimit          = 15,
+    
+    /**
+     *  相同的操作正在执行，请不要多次调用
+     */
+    NIMLocalErrorCodeSameOperationInProgress      = 16,
+
 };
 
 

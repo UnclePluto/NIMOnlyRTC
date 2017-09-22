@@ -15,6 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 @class NIMRecentSession;
 @class NIMHistoryMessageSearchOption;
 @class NIMMessageSearchOption;
+@class NIMDeleteMessagesOption;
 
 
 
@@ -130,18 +131,18 @@ typedef void(^NIMGlobalSearchMessageBlock)(NSError * __nullable error,NSDictiona
  *  删除某个会话的所有消息
  *
  *  @param session 待删除会话
- *  @param removeRecentSession 是否移除对应的会话项  YES则移除,NO则不移除。
+ *  @param option 删除消息选项
  */
 - (void)deleteAllmessagesInSession:(NIMSession *)session
-               removeRecentSession:(BOOL)removeRecentSession;
+                            option:(nullable NIMDeleteMessagesOption *)option;
 
 /**
  *  删除所有会话消息
  *
- *  @param removeRecentSessions 是否移除会话项,YES则移除,NO则不移除，但会将所有会话项设置成已删除状态
+ *  @param option 删除消息选项
  *  @discussion 调用这个接口只会触发allMessagesDeleted这个回调，其他针对单个recentSession的回调都不会被调用
  */
-- (void)deleteAllMessages:(BOOL)removeRecentSessions;
+- (void)deleteAllMessages:(nullable NIMDeleteMessagesOption *)option;
 
 
 /**
@@ -179,7 +180,7 @@ typedef void(^NIMGlobalSearchMessageBlock)(NSError * __nullable error,NSDictiona
  *  写入消息
  *
  *  @param message 需要更新的消息
- *  @param session 需要更新的消息
+ *  @param session 需要更新的会话
  *  @param completion 完成后的回调
  *  @discussion 当保存消息成功之后，会收到 NIMChatManagerDelegate 中的 onRecvMessages: 回调。目前支持消息类型:NIMMessageTypeText,NIMMessageTypeTip,NIMMessageTypeCustom
  */

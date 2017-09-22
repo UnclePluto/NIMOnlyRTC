@@ -85,7 +85,7 @@ typedef NS_ENUM(NSInteger,NIMMessageSearchOrder) {
 
 
 /**
- *  检索服务器历史消息选项
+ *  检索服务器历史消息选项 (服务器)
  */
 @interface NIMHistoryMessageSearchOption : NSObject
 
@@ -104,7 +104,7 @@ typedef NS_ENUM(NSInteger,NIMMessageSearchOrder) {
 
 /**
  *  检索消息终止时间,此参数对聊天室会话无效。
- *  @discussion 当前最早的时间,没有则传入0。
+ *  @discussion 当前最早的时间,没有则传入 0。
  */
 @property (nonatomic,assign)      NSTimeInterval  endTime;
 
@@ -122,7 +122,10 @@ typedef NS_ENUM(NSInteger,NIMMessageSearchOrder) {
 @property (nonatomic,assign)      NIMMessageSearchOrder             order;
 
 /**
- *  是否需要同步到DB，此参数对聊天室会话无效。
+ *  是否需要同步到 db，此参数对聊天室会话无效。
+ *  @discussion SDK 删除消息分为两种模式：标记删除和彻底删除（参见 NIMDeleteMessagesOption）。
+ *  若消息集在本地被标记删除，则意味着消息仍存在本地，但被打上了特殊的记号，同步后写入 db 会失败。
+ *  只有不存在本地的消息才可以通过 sync 标记进行 db 存储
  */
 @property (nonatomic,assign)      BOOL            sync;
 
