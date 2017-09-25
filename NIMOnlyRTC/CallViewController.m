@@ -54,6 +54,10 @@
     NSArray *callees = [NSArray arrayWithObjects:self.txfCallee.text, nil];
     
     NIMNetCallVideoCaptureParam *captureParam = [[NIMNetCallVideoCaptureParam alloc]init];
+    
+    //解决iOS 11 在Xcode9下不显示问题
+    [captureParam setProvideLocalVideoProcess:NO];
+    
     NIMNetCallOption *option = [[NIMNetCallOption alloc] init];
     option.videoCaptureParam = captureParam;
     
@@ -156,6 +160,10 @@
     [self.btnAccept removeFromSuperview];
     self.btnAccept = nil;
     NIMNetCallVideoCaptureParam *param = [[NIMNetCallVideoCaptureParam alloc] init];
+    
+    //解决iOS11 在Xcode9下 本地预览不显示问题
+    [param setProvideLocalVideoProcess:NO];
+    
     NIMNetCallOption *option = [[NIMNetCallOption alloc] init];
     option.videoCaptureParam = param;
     
