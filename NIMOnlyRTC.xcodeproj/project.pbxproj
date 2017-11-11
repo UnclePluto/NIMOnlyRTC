@@ -324,7 +324,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-NIMOnlyRTC/Pods-NIMOnlyRTC-resources.sh",
-				"${PODS_ROOT}/NIMSDK/NIMAVChat/Resources/NMCVideoFilter.bundle",
+				"${PODS_ROOT}/NIMSDK/NIM_iOS_SDK_v4.3.0/NIMAVChat/Resources/NMCVideoFilter.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
