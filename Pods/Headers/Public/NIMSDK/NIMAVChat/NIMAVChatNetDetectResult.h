@@ -1,1 +1,1 @@
-../../../../NIMSDK/NIM_iOS_SDK_v4.3.0/NIMAVChat/NIMAVChat.framework/Headers/NIMAVChatNetDetectResult.h
+../../../../NIMSDK/NIMAVChat/NIMAVChat.framework/Headers/NIMAVChatNetDetectResult.h

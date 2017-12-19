@@ -19,6 +19,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     NIMSDKOption *option = [NIMSDKOption optionWithAppKey:@"45c6af3c98409b18a84451215d0bdd6e"];
+    NSLog(@"SDK VERSION:%@",[NIMSDK sharedSDK].sdkVersion);
     
     [[NIMSDK sharedSDK] registerWithOption:option];
     

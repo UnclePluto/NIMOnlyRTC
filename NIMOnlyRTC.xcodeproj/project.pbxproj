@@ -17,6 +17,23 @@
 		0149E7071F03729700D7FF12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0149E7051F03729700D7FF12 /* LaunchScreen.storyboard */; };
 		0149E7121F03729800D7FF12 /* NIMOnlyRTCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0149E7111F03729800D7FF12 /* NIMOnlyRTCTests.m */; };
 		0149E71D1F03729800D7FF12 /* NIMOnlyRTCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0149E71C1F03729800D7FF12 /* NIMOnlyRTCUITests.m */; };
+		015C6C261FE8F20B00B5668E /* NTESGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 015C6BF81FE8F20B00B5668E /* NTESGLView.m */; };
+		015C6C291FE8F20B00B5668E /* renderer_yuv444p10le.c in Sources */ = {isa = PBXBuildFile; fileRef = 015C6C021FE8F20B00B5668E /* renderer_yuv444p10le.c */; };
+		015C6C2A1FE8F20B00B5668E /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = 015C6C031FE8F20B00B5668E /* common.c */; };
+		015C6C2B1FE8F20B00B5668E /* mvp.vsh.c in Sources */ = {isa = PBXBuildFile; fileRef = 015C6C061FE8F20B00B5668E /* mvp.vsh.c */; };
+		015C6C2C1FE8F20B00B5668E /* renderer_rgb.c in Sources */ = {isa = PBXBuildFile; fileRef = 015C6C071FE8F20B00B5668E /* renderer_rgb.c */; };
+		015C6C2D1FE8F20B00B5668E /* renderer_yuv420p.c in Sources */ = {isa = PBXBuildFile; fileRef = 015C6C081FE8F20B00B5668E /* renderer_yuv420p.c */; };
+		015C6C2E1FE8F20B00B5668E /* renderer_yuv420sp.c in Sources */ = {isa = PBXBuildFile; fileRef = 015C6C091FE8F20B00B5668E /* renderer_yuv420sp.c */; };
+		015C6C2F1FE8F20B00B5668E /* shader.c in Sources */ = {isa = PBXBuildFile; fileRef = 015C6C0A1FE8F20B00B5668E /* shader.c */; };
+		015C6C301FE8F20B00B5668E /* renderer.c in Sources */ = {isa = PBXBuildFile; fileRef = 015C6C0B1FE8F20B00B5668E /* renderer.c */; };
+		015C6C311FE8F20B00B5668E /* yuv444p10le.fsh.c in Sources */ = {isa = PBXBuildFile; fileRef = 015C6C0D1FE8F20B00B5668E /* yuv444p10le.fsh.c */; };
+		015C6C321FE8F20B00B5668E /* yuv420p.fsh.c in Sources */ = {isa = PBXBuildFile; fileRef = 015C6C0E1FE8F20B00B5668E /* yuv420p.fsh.c */; };
+		015C6C331FE8F20B00B5668E /* yuv420sp.fsh.c in Sources */ = {isa = PBXBuildFile; fileRef = 015C6C0F1FE8F20B00B5668E /* yuv420sp.fsh.c */; };
+		015C6C341FE8F20B00B5668E /* rgb.fsh.c in Sources */ = {isa = PBXBuildFile; fileRef = 015C6C101FE8F20B00B5668E /* rgb.fsh.c */; };
+		015C6C351FE8F20B00B5668E /* color.c in Sources */ = {isa = PBXBuildFile; fileRef = 015C6C111FE8F20B00B5668E /* color.c */; };
+		015C6C361FE8F20B00B5668E /* IJKSDLGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 015C6C1B1FE8F20B00B5668E /* IJKSDLGLView.m */; };
+		015C6C371FE8F20B00B5668E /* ijksdl_timer.c in Sources */ = {isa = PBXBuildFile; fileRef = 015C6C231FE8F20B00B5668E /* ijksdl_timer.c */; };
+		015C6C401FE8F74400B5668E /* UIView+NTES.m in Sources */ = {isa = PBXBuildFile; fileRef = 015C6C3F1FE8F74400B5668E /* UIView+NTES.m */; };
 		A48DAC4B3B0EC8683A415ECE /* libPods-NIMOnlyRTC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D7DCAA8A6E0F4368174E39D /* libPods-NIMOnlyRTC.a */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +75,44 @@
 		0149E7181F03729800D7FF12 /* NIMOnlyRTCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NIMOnlyRTCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0149E71C1F03729800D7FF12 /* NIMOnlyRTCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NIMOnlyRTCUITests.m; sourceTree = "<group>"; };
 		0149E71E1F03729800D7FF12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		015C6BF41FE8F20B00B5668E /* NTESGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTESGLView.h; sourceTree = "<group>"; };
+		015C6BF81FE8F20B00B5668E /* NTESGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTESGLView.m; sourceTree = "<group>"; };
+		015C6BFE1FE8F20B00B5668E /* ijksdl_gles2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_gles2.h; sourceTree = "<group>"; };
+		015C6BFF1FE8F20B00B5668E /* ijksdl_stdinc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_stdinc.h; sourceTree = "<group>"; };
+		015C6C001FE8F20B00B5668E /* ijksdl_vout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_vout.h; sourceTree = "<group>"; };
+		015C6C021FE8F20B00B5668E /* renderer_yuv444p10le.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = renderer_yuv444p10le.c; sourceTree = "<group>"; };
+		015C6C031FE8F20B00B5668E /* common.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = common.c; sourceTree = "<group>"; };
+		015C6C041FE8F20B00B5668E /* internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = internal.h; sourceTree = "<group>"; };
+		015C6C061FE8F20B00B5668E /* mvp.vsh.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mvp.vsh.c; sourceTree = "<group>"; };
+		015C6C071FE8F20B00B5668E /* renderer_rgb.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = renderer_rgb.c; sourceTree = "<group>"; };
+		015C6C081FE8F20B00B5668E /* renderer_yuv420p.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = renderer_yuv420p.c; sourceTree = "<group>"; };
+		015C6C091FE8F20B00B5668E /* renderer_yuv420sp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = renderer_yuv420sp.c; sourceTree = "<group>"; };
+		015C6C0A1FE8F20B00B5668E /* shader.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = shader.c; sourceTree = "<group>"; };
+		015C6C0B1FE8F20B00B5668E /* renderer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = renderer.c; sourceTree = "<group>"; };
+		015C6C0D1FE8F20B00B5668E /* yuv444p10le.fsh.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = yuv444p10le.fsh.c; sourceTree = "<group>"; };
+		015C6C0E1FE8F20B00B5668E /* yuv420p.fsh.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = yuv420p.fsh.c; sourceTree = "<group>"; };
+		015C6C0F1FE8F20B00B5668E /* yuv420sp.fsh.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = yuv420sp.fsh.c; sourceTree = "<group>"; };
+		015C6C101FE8F20B00B5668E /* rgb.fsh.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rgb.fsh.c; sourceTree = "<group>"; };
+		015C6C111FE8F20B00B5668E /* color.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = color.c; sourceTree = "<group>"; };
+		015C6C121FE8F20B00B5668E /* ijksdl_mutex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_mutex.h; sourceTree = "<group>"; };
+		015C6C131FE8F20B00B5668E /* ijksdl_fourcc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_fourcc.h; sourceTree = "<group>"; };
+		015C6C141FE8F20B00B5668E /* ijksdl_video.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_video.h; sourceTree = "<group>"; };
+		015C6C151FE8F20B00B5668E /* ijksdl_endian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_endian.h; sourceTree = "<group>"; };
+		015C6C161FE8F20B00B5668E /* ijksdl_class.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_class.h; sourceTree = "<group>"; };
+		015C6C171FE8F20B00B5668E /* ijksdl_timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_timer.h; sourceTree = "<group>"; };
+		015C6C181FE8F20B00B5668E /* ijksdl_inc_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_inc_internal.h; sourceTree = "<group>"; };
+		015C6C1A1FE8F20B00B5668E /* ijksdl_ios.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_ios.h; sourceTree = "<group>"; };
+		015C6C1B1FE8F20B00B5668E /* IJKSDLGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IJKSDLGLView.m; sourceTree = "<group>"; };
+		015C6C1C1FE8F20B00B5668E /* ijksdl_vout_overlay_videotoolbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_vout_overlay_videotoolbox.h; sourceTree = "<group>"; };
+		015C6C1D1FE8F20B00B5668E /* IJKSDLGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IJKSDLGLView.h; sourceTree = "<group>"; };
+		015C6C1E1FE8F20B00B5668E /* ijksdl_thread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_thread.h; sourceTree = "<group>"; };
+		015C6C1F1FE8F20B00B5668E /* ijksdl_log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_log.h; sourceTree = "<group>"; };
+		015C6C201FE8F20B00B5668E /* ijksdl_misc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_misc.h; sourceTree = "<group>"; };
+		015C6C211FE8F20B00B5668E /* ijksdl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl.h; sourceTree = "<group>"; };
+		015C6C221FE8F20B00B5668E /* ijksdl_error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_error.h; sourceTree = "<group>"; };
+		015C6C231FE8F20B00B5668E /* ijksdl_timer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ijksdl_timer.c; sourceTree = "<group>"; };
+		015C6C3E1FE8F74400B5668E /* UIView+NTES.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UIView+NTES.h"; path = "Category/UIView+NTES.h"; sourceTree = "<group>"; };
+		015C6C3F1FE8F74400B5668E /* UIView+NTES.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "UIView+NTES.m"; path = "Category/UIView+NTES.m"; sourceTree = "<group>"; };
 		01FA5D19FAAB8D7B02A70D4E /* Pods-NIMOnlyRTC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NIMOnlyRTC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NIMOnlyRTC/Pods-NIMOnlyRTC.debug.xcconfig"; sourceTree = "<group>"; };
 		0D7DCAA8A6E0F4368174E39D /* libPods-NIMOnlyRTC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NIMOnlyRTC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2703CA8773E48CBE9C2C621E /* Pods-NIMOnlyRTC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NIMOnlyRTC.release.xcconfig"; path = "Pods/Target Support Files/Pods-NIMOnlyRTC/Pods-NIMOnlyRTC.release.xcconfig"; sourceTree = "<group>"; };
@@ -94,6 +149,8 @@
 			children = (
 				012214121F03E722005848BA /* NSString+MD5.h */,
 				012214131F03E722005848BA /* NSString+MD5.m */,
+				015C6C3E1FE8F74400B5668E /* UIView+NTES.h */,
+				015C6C3F1FE8F74400B5668E /* UIView+NTES.m */,
 			);
 			name = Category;
 			sourceTree = "<group>";
@@ -123,6 +180,7 @@
 		0149E6F61F03729700D7FF12 /* NIMOnlyRTC */ = {
 			isa = PBXGroup;
 			children = (
+				015C6BF21FE8F20B00B5668E /* View */,
 				012214151F03EDAD005848BA /* Category */,
 				0149E6FA1F03729700D7FF12 /* AppDelegate.h */,
 				0149E6FB1F03729700D7FF12 /* AppDelegate.m */,
@@ -163,6 +221,89 @@
 				0149E71E1F03729800D7FF12 /* Info.plist */,
 			);
 			path = NIMOnlyRTCUITests;
+			sourceTree = "<group>";
+		};
+		015C6BF21FE8F20B00B5668E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				015C6BF41FE8F20B00B5668E /* NTESGLView.h */,
+				015C6BF81FE8F20B00B5668E /* NTESGLView.m */,
+				015C6BFD1FE8F20B00B5668E /* ijksdl */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		015C6BFD1FE8F20B00B5668E /* ijksdl */ = {
+			isa = PBXGroup;
+			children = (
+				015C6BFE1FE8F20B00B5668E /* ijksdl_gles2.h */,
+				015C6BFF1FE8F20B00B5668E /* ijksdl_stdinc.h */,
+				015C6C001FE8F20B00B5668E /* ijksdl_vout.h */,
+				015C6C011FE8F20B00B5668E /* gles2 */,
+				015C6C121FE8F20B00B5668E /* ijksdl_mutex.h */,
+				015C6C131FE8F20B00B5668E /* ijksdl_fourcc.h */,
+				015C6C141FE8F20B00B5668E /* ijksdl_video.h */,
+				015C6C151FE8F20B00B5668E /* ijksdl_endian.h */,
+				015C6C161FE8F20B00B5668E /* ijksdl_class.h */,
+				015C6C171FE8F20B00B5668E /* ijksdl_timer.h */,
+				015C6C181FE8F20B00B5668E /* ijksdl_inc_internal.h */,
+				015C6C191FE8F20B00B5668E /* ios */,
+				015C6C1E1FE8F20B00B5668E /* ijksdl_thread.h */,
+				015C6C1F1FE8F20B00B5668E /* ijksdl_log.h */,
+				015C6C201FE8F20B00B5668E /* ijksdl_misc.h */,
+				015C6C211FE8F20B00B5668E /* ijksdl.h */,
+				015C6C221FE8F20B00B5668E /* ijksdl_error.h */,
+				015C6C231FE8F20B00B5668E /* ijksdl_timer.c */,
+			);
+			path = ijksdl;
+			sourceTree = "<group>";
+		};
+		015C6C011FE8F20B00B5668E /* gles2 */ = {
+			isa = PBXGroup;
+			children = (
+				015C6C021FE8F20B00B5668E /* renderer_yuv444p10le.c */,
+				015C6C031FE8F20B00B5668E /* common.c */,
+				015C6C041FE8F20B00B5668E /* internal.h */,
+				015C6C051FE8F20B00B5668E /* vsh */,
+				015C6C071FE8F20B00B5668E /* renderer_rgb.c */,
+				015C6C081FE8F20B00B5668E /* renderer_yuv420p.c */,
+				015C6C091FE8F20B00B5668E /* renderer_yuv420sp.c */,
+				015C6C0A1FE8F20B00B5668E /* shader.c */,
+				015C6C0B1FE8F20B00B5668E /* renderer.c */,
+				015C6C0C1FE8F20B00B5668E /* fsh */,
+				015C6C111FE8F20B00B5668E /* color.c */,
+			);
+			path = gles2;
+			sourceTree = "<group>";
+		};
+		015C6C051FE8F20B00B5668E /* vsh */ = {
+			isa = PBXGroup;
+			children = (
+				015C6C061FE8F20B00B5668E /* mvp.vsh.c */,
+			);
+			path = vsh;
+			sourceTree = "<group>";
+		};
+		015C6C0C1FE8F20B00B5668E /* fsh */ = {
+			isa = PBXGroup;
+			children = (
+				015C6C0D1FE8F20B00B5668E /* yuv444p10le.fsh.c */,
+				015C6C0E1FE8F20B00B5668E /* yuv420p.fsh.c */,
+				015C6C0F1FE8F20B00B5668E /* yuv420sp.fsh.c */,
+				015C6C101FE8F20B00B5668E /* rgb.fsh.c */,
+			);
+			path = fsh;
+			sourceTree = "<group>";
+		};
+		015C6C191FE8F20B00B5668E /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				015C6C1A1FE8F20B00B5668E /* ijksdl_ios.h */,
+				015C6C1B1FE8F20B00B5668E /* IJKSDLGLView.m */,
+				015C6C1C1FE8F20B00B5668E /* ijksdl_vout_overlay_videotoolbox.h */,
+				015C6C1D1FE8F20B00B5668E /* IJKSDLGLView.h */,
+			);
+			path = ios;
 			sourceTree = "<group>";
 		};
 		0EFE5DD64902B0DBEF1D6377 /* Frameworks */ = {
@@ -324,7 +465,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-NIMOnlyRTC/Pods-NIMOnlyRTC-resources.sh",
-				"${PODS_ROOT}/NIMSDK/NIM_iOS_SDK_v4.3.0/NIMAVChat/Resources/NMCVideoFilter.bundle",
+				"${PODS_ROOT}/NIMSDK/NIMAVChat/Resources/NMCVideoFilter.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
@@ -377,9 +518,26 @@
 			files = (
 				012214181F03F71D005848BA /* CallViewController.m in Sources */,
 				0149E6FF1F03729700D7FF12 /* ViewController.m in Sources */,
+				015C6C341FE8F20B00B5668E /* rgb.fsh.c in Sources */,
+				015C6C2C1FE8F20B00B5668E /* renderer_rgb.c in Sources */,
 				0149E6FC1F03729700D7FF12 /* AppDelegate.m in Sources */,
 				012214141F03E722005848BA /* NSString+MD5.m in Sources */,
+				015C6C2F1FE8F20B00B5668E /* shader.c in Sources */,
+				015C6C2D1FE8F20B00B5668E /* renderer_yuv420p.c in Sources */,
+				015C6C361FE8F20B00B5668E /* IJKSDLGLView.m in Sources */,
+				015C6C2B1FE8F20B00B5668E /* mvp.vsh.c in Sources */,
+				015C6C2E1FE8F20B00B5668E /* renderer_yuv420sp.c in Sources */,
+				015C6C291FE8F20B00B5668E /* renderer_yuv444p10le.c in Sources */,
+				015C6C311FE8F20B00B5668E /* yuv444p10le.fsh.c in Sources */,
+				015C6C371FE8F20B00B5668E /* ijksdl_timer.c in Sources */,
+				015C6C321FE8F20B00B5668E /* yuv420p.fsh.c in Sources */,
+				015C6C401FE8F74400B5668E /* UIView+NTES.m in Sources */,
+				015C6C2A1FE8F20B00B5668E /* common.c in Sources */,
 				0149E6F91F03729700D7FF12 /* main.m in Sources */,
+				015C6C331FE8F20B00B5668E /* yuv420sp.fsh.c in Sources */,
+				015C6C301FE8F20B00B5668E /* renderer.c in Sources */,
+				015C6C261FE8F20B00B5668E /* NTESGLView.m in Sources */,
+				015C6C351FE8F20B00B5668E /* color.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -532,6 +690,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = A9356BL3X4;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/NIMSDK\"",
+					"\"$(SRCROOT)/NIMOnlyRTC/View\"",
+				);
 				INFOPLIST_FILE = NIMOnlyRTC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nick.NIMOnlyRTC;
@@ -545,6 +709,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = A9356BL3X4;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/NIMSDK\"",
+					"\"$(SRCROOT)/NIMOnlyRTC/View\"",
+				);
 				INFOPLIST_FILE = NIMOnlyRTC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nick.NIMOnlyRTC;

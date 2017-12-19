@@ -12,6 +12,7 @@
 
 #import "CallViewController.h"
 #import <NIMAVChat/NIMAVChat.h>
+#import "NTESGLView.h"
 
 @interface CallViewController ()<NIMNetCallManagerDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *txfCallee;
@@ -26,6 +27,7 @@
 @property (nonatomic, strong) UIView *localViewPrew;
 
 @property (nonatomic, strong) UIImageView *remoteView;
+@property (nonatomic, strong) NTESGLView *remoteGLView;
 
 @end
 
@@ -132,8 +134,12 @@
 
 -(void)showAVchatView{
     
-    self.remoteView = [[UIImageView alloc] initWithFrame:self.view.bounds];
-    [self.view addSubview:self.remoteView];
+    //self.remoteView = [[UIImageView alloc] initWithFrame:self.view.bounds];
+    self.remoteGLView = [[NTESGLView alloc] initWithFrame:self.view.bounds];
+    [self.remoteGLView setContentMode:UIViewContentModeScaleAspectFill];
+    _remoteGLView.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    
+    [self.view addSubview:self.remoteGLView];
     
     self.localView = [[UIView alloc] initWithFrame:CGRectMake(15, CGRectGetHeight(self.view.frame) - 20 - 160, 120, 160)];
     self.localView.backgroundColor = [UIColor blackColor];
@@ -187,9 +193,9 @@
         self.localView = nil;
     }
     
-    if (self.remoteView) {
-        [self.remoteView removeFromSuperview];
-        self.remoteView = nil;
+    if (self.remoteGLView) {
+        [self.remoteGLView removeFromSuperview];
+        self.remoteGLView = nil;
     }
     
     [self.btnAccept removeFromSuperview];
@@ -216,9 +222,9 @@
     
 }
 
--(void)onRemoteImageReady:(CGImageRef)image{
-    self.remoteView.image = [UIImage imageWithCGImage:image];
-}
+//-(void)onRemoteImageReady:(CGImageRef)image{
+//    self.remoteView.image = [UIImage imageWithCGImage:image];
+//}
 
 -(void)onLocalDisplayviewReady:(UIView *)displayView{
     if (self.localViewPrew) {
@@ -233,8 +239,12 @@
     NSLog(@"---------------走了-----------------");
 }
 
--(void)onRemoteYUVReady:(NSData *)yuvData width:(NSUInteger)width height:(NSUInteger)height from:(NSString *)user{
-    
+-(void)onRemoteYUVReady:(NSData *)yuvData
+                  width:(NSUInteger)width
+                 height:(NSUInteger)height
+                   from:(NSString *)user{
+
+        [self.remoteGLView render:yuvData width:width height:height];
 }
 
 
