@@ -6,6 +6,24 @@
 //  Copyright © 2017年 Nick Deng. All rights reserved.
 //
 
+/*
+ 
+ *************************** 注意！ *****************************
+ 
+                   注意！注意！注意！注意！注意！
+ 
+ 该demo旨在最简化一对一音视频通话流程，便于其他开发者快速上手一对一音视频通话
+ 
+ 流程，不可在线上项目中直接使用！线上场景复杂需要考虑的因素较多，建议直接参考
+ 
+ 云信官网即时通讯IMdemo：netease.im/im-sdk-demo?solutionType=0#solution
+ 
+ 
+ 
+ ***************************************************************
+ 
+ */
+
 #import "AppDelegate.h"
 #import <NIMSDK/NIMSDK.h>
 
@@ -18,7 +36,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    
+    //这里默认配置的是云信demo的AppKey，通过云信demo进行注册的账号可以直接在该demo下登录。
+    //如果是切换为自己的appkey，需要自行实现服务端api调用创建云信ACCID
     NIMSDKOption *option = [NIMSDKOption optionWithAppKey:@"45c6af3c98409b18a84451215d0bdd6e"];
+    
+    //打印SDK版本
     NSLog(@"SDK VERSION:%@",[NIMSDK sharedSDK].sdkVersion);
     
     [[NIMSDK sharedSDK] registerWithOption:option];

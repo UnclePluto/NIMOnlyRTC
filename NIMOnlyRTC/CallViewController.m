@@ -52,6 +52,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+//进行呼叫
 - (IBAction)doCall:(id)sender {
     NSArray *callees = [NSArray arrayWithObjects:self.txfCallee.text, nil];
     
@@ -81,6 +82,8 @@
     [self.txfCallee resignFirstResponder];
 }
 
+
+//展示呼叫画面
 -(void)showCallingView{
     
     [self removedDialingView];
@@ -95,6 +98,8 @@
     
 }
 
+
+//展示被叫画面
 -(void)showCalledView{
     
     [self removedDialingView];
@@ -123,6 +128,7 @@
     
 }
 
+
 -(void)showDialingView{
     
     [self.txfCallee setHidden:NO];
@@ -131,7 +137,7 @@
     
 }
 
-
+//展示接听画面
 -(void)showAVchatView{
     
     //self.remoteView = [[UIImageView alloc] initWithFrame:self.view.bounds];
@@ -159,7 +165,7 @@
 
 
 
-
+//进行接听操作
 -(void)doAccept:(id)sender{
     __weak typeof(& *self)wself = self;
     
@@ -168,7 +174,8 @@
     NIMNetCallVideoCaptureParam *param = [[NIMNetCallVideoCaptureParam alloc] init];
     
     //解决iOS11 在Xcode9下 本地预览不显示问题
-    [param setProvideLocalVideoProcess:NO];
+    //在4.4以上默认为NO
+    //[param setProvideLocalVideoProcess:NO];
     
     NIMNetCallOption *option = [[NIMNetCallOption alloc] init];
     option.videoCaptureParam = param;
@@ -186,6 +193,8 @@
     }];
 }
 
+
+//进行通话挂断
 -(void)doHangup:(UInt64)callId{
     
     if (self.localView) {
@@ -214,6 +223,7 @@
 
 #pragma mark - NIMNetCallManagerDelegate
 
+//收到对方同意接听的回调，如果同意应该展示通话界面
 -(void)onResponse:(UInt64)callID from:(NSString *)callee accepted:(BOOL)accepted{
     
     if (accepted) {
@@ -222,10 +232,13 @@
     
 }
 
+//该接口已弃用，请勿使用
 //-(void)onRemoteImageReady:(CGImageRef)image{
 //    self.remoteView.image = [UIImage imageWithCGImage:image];
 //}
 
+
+//本地画面渲染回调，如果没有走应该是NIMNetCallVideoCaptureParam设置问题
 -(void)onLocalDisplayviewReady:(UIView *)displayView{
     if (self.localViewPrew) {
         [self.localViewPrew removeFromSuperview];
@@ -235,10 +248,11 @@
     displayView.frame = self.localView.bounds;
     [self.localView addSubview:displayView];
     
-    
     NSLog(@"---------------走了-----------------");
 }
 
+
+//iOS11.2之后必须使用该接口进行渲染，否则会产生崩溃
 -(void)onRemoteYUVReady:(NSData *)yuvData
                   width:(NSUInteger)width
                  height:(NSUInteger)height
@@ -247,22 +261,20 @@
         [self.remoteGLView render:yuvData width:width height:height];
 }
 
-
+//收到呼叫展示被叫页面
 -(void)onReceive:(UInt64)callID from:(NSString *)caller type:(NIMNetCallMediaType)type message:(NSString *)extendMessage{
     self.chatid = callID;
-    
     [self showCalledView];
     
 }
 
+//通话已经接通
 -(void)onCallEstablished:(UInt64)callID{
-    
     NSLog(@"通话已经接通！");
 //    self.localViewPrew = [NIMAVChatSDK sharedSDK].netCallManager.localPreview;
 //    [self onLocalDisplayviewReady:self.localViewPrew];
     
 }
-
 
 -(void)onHangup:(UInt64)callID by:(NSString *)user{
     [self doHangup:callID];

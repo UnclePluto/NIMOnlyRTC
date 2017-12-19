@@ -15,8 +15,6 @@
 		0149E7021F03729700D7FF12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0149E7001F03729700D7FF12 /* Main.storyboard */; };
 		0149E7041F03729700D7FF12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0149E7031F03729700D7FF12 /* Assets.xcassets */; };
 		0149E7071F03729700D7FF12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0149E7051F03729700D7FF12 /* LaunchScreen.storyboard */; };
-		0149E7121F03729800D7FF12 /* NIMOnlyRTCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0149E7111F03729800D7FF12 /* NIMOnlyRTCTests.m */; };
-		0149E71D1F03729800D7FF12 /* NIMOnlyRTCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0149E71C1F03729800D7FF12 /* NIMOnlyRTCUITests.m */; };
 		015C6C261FE8F20B00B5668E /* NTESGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 015C6BF81FE8F20B00B5668E /* NTESGLView.m */; };
 		015C6C291FE8F20B00B5668E /* renderer_yuv444p10le.c in Sources */ = {isa = PBXBuildFile; fileRef = 015C6C021FE8F20B00B5668E /* renderer_yuv444p10le.c */; };
 		015C6C2A1FE8F20B00B5668E /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = 015C6C031FE8F20B00B5668E /* common.c */; };
@@ -70,11 +68,7 @@
 		0149E7061F03729700D7FF12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0149E7081F03729700D7FF12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0149E70D1F03729800D7FF12 /* NIMOnlyRTCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NIMOnlyRTCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0149E7111F03729800D7FF12 /* NIMOnlyRTCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NIMOnlyRTCTests.m; sourceTree = "<group>"; };
-		0149E7131F03729800D7FF12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0149E7181F03729800D7FF12 /* NIMOnlyRTCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NIMOnlyRTCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0149E71C1F03729800D7FF12 /* NIMOnlyRTCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NIMOnlyRTCUITests.m; sourceTree = "<group>"; };
-		0149E71E1F03729800D7FF12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		015C6BF41FE8F20B00B5668E /* NTESGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTESGLView.h; sourceTree = "<group>"; };
 		015C6BF81FE8F20B00B5668E /* NTESGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTESGLView.m; sourceTree = "<group>"; };
 		015C6BFE1FE8F20B00B5668E /* ijksdl_gles2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_gles2.h; sourceTree = "<group>"; };
@@ -159,8 +153,6 @@
 			isa = PBXGroup;
 			children = (
 				0149E6F61F03729700D7FF12 /* NIMOnlyRTC */,
-				0149E7101F03729800D7FF12 /* NIMOnlyRTCTests */,
-				0149E71B1F03729800D7FF12 /* NIMOnlyRTCUITests */,
 				0149E6F51F03729700D7FF12 /* Products */,
 				1676AFFEA9A0E4EB5BD7257E /* Pods */,
 				0EFE5DD64902B0DBEF1D6377 /* Frameworks */,
@@ -203,24 +195,6 @@
 				0149E6F81F03729700D7FF12 /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		0149E7101F03729800D7FF12 /* NIMOnlyRTCTests */ = {
-			isa = PBXGroup;
-			children = (
-				0149E7111F03729800D7FF12 /* NIMOnlyRTCTests.m */,
-				0149E7131F03729800D7FF12 /* Info.plist */,
-			);
-			path = NIMOnlyRTCTests;
-			sourceTree = "<group>";
-		};
-		0149E71B1F03729800D7FF12 /* NIMOnlyRTCUITests */ = {
-			isa = PBXGroup;
-			children = (
-				0149E71C1F03729800D7FF12 /* NIMOnlyRTCUITests.m */,
-				0149E71E1F03729800D7FF12 /* Info.plist */,
-			);
-			path = NIMOnlyRTCUITests;
 			sourceTree = "<group>";
 		};
 		015C6BF21FE8F20B00B5668E /* View */ = {
@@ -545,7 +519,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0149E7121F03729800D7FF12 /* NIMOnlyRTCTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -553,7 +526,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0149E71D1F03729800D7FF12 /* NIMOnlyRTCUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

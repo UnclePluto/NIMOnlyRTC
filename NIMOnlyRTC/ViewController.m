@@ -44,12 +44,11 @@
             UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
             self.avChatVC = [storyboard instantiateViewControllerWithIdentifier:@"avChat"];
             
-            
-            
 //            [self showToast:@"登录成功！"];
             [self presentViewController:self.avChatVC animated:YES completion:nil];
             
         }else{
+            //如果抱错302，说明accid与token不对，请与服务端确认，或者重新申请账号
             NSString *strError = [NSString stringWithFormat:@"error code:%@",error];
             NSLog(@"%@",strError);
             [self showToast:strError];
@@ -61,6 +60,8 @@
     [sender resignFirstResponder];
 }
 
+
+//判断是否是云信demo的key，如果是进行MD5加密
 -(NSString *)isDemoAppkey:(NSString *)token{
     if ([[NIMSDK sharedSDK].appKey isEqualToString:@"45c6af3c98409b18a84451215d0bdd6e"]) {
         return [token stringToMD5];
@@ -68,6 +69,7 @@
         return token;
     }
 }
+
 
 -(void)showToast:(NSString *)message{
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"注意" message:message preferredStyle:UIAlertControllerStyleAlert];
